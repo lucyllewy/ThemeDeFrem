@@ -365,11 +365,18 @@ img.alignleft {
 
 .alignright {
 	float: right;
+	text-align: left;
 	}
 
 .alignleft {
-	float: left
+	float: left;
+	text-align: right;
 	}
+
+.aligncenter 
+{
+	text-align: center;
+}
 /* End Images */
 
 
