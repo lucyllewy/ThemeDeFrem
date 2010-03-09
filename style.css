@@ -162,6 +162,23 @@ h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar
 	color: #f89b9a;
 	}
 
+.commentlist 
+{
+	padding: 0;
+}
+.commentlist li 
+{
+	list-style: none;
+	padding-left: 10px;
+}
+.commentlist li ul li 
+{
+	margin: 0 -5px 0 10px;
+}
+.commentlist li li 
+{
+	margin-left: 20px;
+}
 .commentlist li, #commentform input, #commentform textarea {
 	font-size: 0.9em /*'Lucida Grande', Verdana, Arial, Sans-Serif*/;
 	}
@@ -188,16 +205,12 @@ h2, h2 a, h2 a:hover, h2 a:visited, h3, h3 a, h3 a:hover, h3 a:visited, #sidebar
 	text-transform: none;
 	}
 
-#commentform p {
-/*	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;*/
-	}
-
 .commentmetadata {
 	font-weight: normal;
 	}
 
 #sidebar {
-	font-size: 1em /*'Lucida Grande', Verdana, Arial, Sans-Serif*/;
+	font-size: 1em;
 	}
 
 small, #sidebar ul ul li, #sidebar ul ol li, .nocomments, .postmetadata, blockquote, strike {
@@ -233,7 +246,7 @@ a:hover {
 	}
 
 #wp-calendar caption {
-	font-size: bold 1.3em /*'Lucida Grande', Verdana, Arial, Sans-Serif*/;
+	font: bold 1.3em;
 	text-align: center;
 	}
 
