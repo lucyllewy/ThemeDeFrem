@@ -69,7 +69,7 @@
 
             <?php endif; ?>
 
-            <!--<p><small><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></small></p>-->
+            <p><small><strong>XHTML:</strong> You can use these tags: <code><?php echo allowed_tags(); ?></code></small></p>
 
             <p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
 
@@ -85,6 +85,8 @@
         </form>
 
     <?php endif; // If registration required and not logged in ?>
+    
+</div>
 
 <?php endif; // if you delete this the sky will fall on your head ?>
 </div>
