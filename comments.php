@@ -41,6 +41,10 @@
 
 <div id="respond">
     <h4 class="postcomment"><?php comment_form_title( 'Leave a Reply', 'Leave a Reply to %s' ); ?></h4>
+    
+    <div class="cancel-comment-reply">
+	    <small><?php cancel_comment_reply_link(); ?></small>
+    </div>
 
     <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
     <p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php echo urlencode(get_permalink()); ?>">logged in</a> to post a comment.</p>
@@ -73,6 +77,8 @@
                 <input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
                 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
             </p>
+            
+            <?php comment_id_fields(); ?>
             
             <?php do_action('comment_form', $post->ID); ?>
 
